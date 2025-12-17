@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:17.2
+    container_name: postgres_local
+    environment:
+      - POSTGRES_DB=board
+      - POSTGRES_USER=dev-user
+      - POSTGRES_PASSWORD=secret!@#
+    ports:
+      - '5432:5432'
