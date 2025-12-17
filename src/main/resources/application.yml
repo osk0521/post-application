@@ -1,0 +1,34 @@
+spring:
+  application.name: post-application
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/board?characterEncoding=utf8
+    driver-class-name: org.postgresql.Driver
+    username: dev-user
+    password: secret!@#
+
+  jpa:
+    hibernate.ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        highlight_sql: true
+#spring:
+#  application.name: post-application
+#  config:
+#    import: optional:file:.env[.properties]
+#
+#  datasource:
+#    url: ${DB_URL}
+#    driver-class-name: org.postgresql.Driver
+#    username: ${DB_USER}
+#    password: ${DB_PASSWORD}
+#
+#  jpa:
+#    hibernate.ddl-auto: create-drop
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        highlight_sql: true
